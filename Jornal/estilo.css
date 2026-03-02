@@ -31,10 +31,20 @@
 }
 
 .cards-container img {
-    height: 150px; /* Diminuí um pouco para parecer mais com o formato de cinema da foto */
-    width: 100%;   /* A imagem agora obedece ao tamanho da coluna */
-    object-fit: cover; /* Garante que não estique  */
-    border-radius: 4px; /* Opcional: para dar aquele toque de card profissional */
+  
+    
+    height:300px; 
+    width: 100%;   
+    object-fit:cover; 
+    border-radius: 4px; 
+    object-position: center;
+    transition: transform 0.3s;
+}
+
+.cards-container img:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+    border: 2px solid white; 
 }
 
 .cards-container {
@@ -50,6 +60,16 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+.fileira-de-filmes{
+position: relative;
+margin-top: -150px;
+z-index: 20;
+color: white;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-bottom: 20;
+margin-left: 20px;
 }
 
 
@@ -80,7 +100,7 @@ header {
 
 header:hover {
     background-color: rgb(94, 102, 211);
-    color: rgb(59, 66, 64);
+    color: rgb(113, 17, 196);
     padding: 20px;
     opacity: 0;
     visibility: visible;
@@ -136,6 +156,9 @@ body {
     height: 80vh;
     background-image: url(Imagens/imghero.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(to top, rgb(30, 31, 34) 0%, transparent 50%), url(Imagens/imghero.png);
     background-size: cover;
     background-position: center;
 }
