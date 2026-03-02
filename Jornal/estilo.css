@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Isso ajuda a calcular o tamanho sem erros */
+}
+
+
+
+.menu-list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 7px;
+
+}
+
+.menu-list li {
+    display: inline-block;
+    margin-left: 15px;
+
+}
+
+.menu-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.cards-container img {
+    height: 150px; /* Diminuí um pouco para parecer mais com o formato de cinema da foto */
+    width: 100%;   /* A imagem agora obedece ao tamanho da coluna */
+    object-fit: cover; /* Garante que não estique  */
+    border-radius: 4px; /* Opcional: para dar aquele toque de card profissional */
+}
+
+.cards-container {
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr); /* 6 colunas iguais */
+    gap: 10px; /* Aumentei um pouco o espaço entre elas */
+    padding: 20px;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+.botao-um,
+.botao-dois {
+    font-style: italic;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    position: center;
+
+
+}
+
+header {
+    z-index: 100;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 50%, transparent 100%);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header:hover {
+    background-color: rgb(94, 102, 211);
+    color: rgb(59, 66, 64);
+    padding: 20px;
+    opacity: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.9s ease, visibility 0.9s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+}
+
+.parte-um,
+.parte-dois {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.perfil {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+
+
+.menu {
+    display: flex;
+    margin-right: 20px;
+    color: rgb(36, 163, 163);
+    list-style: none;
+    gap: 20px;
+
+}
+
+body {
+    background-color: rgb(30, 31, 34);
+    margin: 0px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    height: 80vh;
+    background-image: url(Imagens/imghero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
